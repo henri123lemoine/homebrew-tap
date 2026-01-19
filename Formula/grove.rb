@@ -5,21 +5,21 @@
 class Grove < Formula
   desc "Terminal UI for Git worktrees"
   homepage "https://github.com/henri123lemoine/grove"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.3/grove_0.1.3_darwin_x86_64.tar.gz"
-      sha256 "bee555e5816e31085564c4fcd10f740cbe63fa2cc19cdd4c98171e72bd56490e"
+      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_darwin_x86_64.tar.gz"
+      sha256 "e25d6402a6fb3449b1c06377b5b6e12aeba76a79e356b7b5c8bb193242a2e7f2"
 
       def install
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.3/grove_0.1.3_darwin_arm64.tar.gz"
-      sha256 "61c90f559aad03fa78c2da20d441dcfa590d767b1232690ae04193111f5a530a"
+      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_darwin_arm64.tar.gz"
+      sha256 "f6b4b2bd57f2cbe262de64173aee4d07cbf87d559e0752a24d3c44344bda9432"
 
       def install
         bin.install "grove"
@@ -29,15 +29,15 @@ class Grove < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.3/grove_0.1.3_linux_x86_64.tar.gz"
-      sha256 "50a328ef66176f8cc7cde47c8dae032e062dc9f97149567370d83ecb652cda3a"
+      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_linux_x86_64.tar.gz"
+      sha256 "fb440a18b0999b8ec8b283fefb2d396c04da0cb70a98140bc481445692819a08"
       def install
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.3/grove_0.1.3_linux_arm64.tar.gz"
-      sha256 "b2358e36dce92bde6f03e90c915d16ab7af147c242e1db27bd6d538a9aeb0322"
+      url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_linux_arm64.tar.gz"
+      sha256 "d432b6d67fabd4f731e5295679f3933b256cef3434f1f2d49c7baa3b2ba5f9bb"
       def install
         bin.install "grove"
       end
