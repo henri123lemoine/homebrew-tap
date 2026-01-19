@@ -11,7 +11,7 @@ class Grove < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_darwin_x86_64.tar.gz"
-      sha256 "e25d6402a6fb3449b1c06377b5b6e12aeba76a79e356b7b5c8bb193242a2e7f2"
+      sha256 "c1ba032d3a6941e6437e5ff04fb87161c3eb6c1dde249cf0ce102133d918310c"
 
       def install
         bin.install "grove"
@@ -19,7 +19,7 @@ class Grove < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_darwin_arm64.tar.gz"
-      sha256 "f6b4b2bd57f2cbe262de64173aee4d07cbf87d559e0752a24d3c44344bda9432"
+      sha256 "b470f8a117c145fb10dc13832185af5966b892ba53862f2a0a1b30d5e71f0a91"
 
       def install
         bin.install "grove"
@@ -30,14 +30,14 @@ class Grove < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_linux_x86_64.tar.gz"
-      sha256 "fb440a18b0999b8ec8b283fefb2d396c04da0cb70a98140bc481445692819a08"
+      sha256 "8b1aaa9d8edd98f14ca457f3770320e609aeda4e8a3b22cc88c9e360cf4bb463"
       def install
         bin.install "grove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/henri123lemoine/grove/releases/download/v0.1.4/grove_0.1.4_linux_arm64.tar.gz"
-      sha256 "d432b6d67fabd4f731e5295679f3933b256cef3434f1f2d49c7baa3b2ba5f9bb"
+      sha256 "efa32be69925d3ef0436c8f0977f5f3e80087d0dd9f09f4b54ae10d52f2c539d"
       def install
         bin.install "grove"
       end
